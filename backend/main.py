@@ -21,6 +21,13 @@ class Todo(BaseModel):
 
 todos = []
 
+@app.get("/")
+def home():
+    return {
+        "message": "Todo List API is running!",
+        "docs": "/docs",
+        "todos": "/todos"
+    }
 
 @app.post('/todos')
 def postTodo(todo: Todo):
