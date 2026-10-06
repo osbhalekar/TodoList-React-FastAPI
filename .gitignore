@@ -1,0 +1,19 @@
+# .venv/
+# __pycache__/
+# node_modules/
+# dist/
+
+
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.env
+
+# React
+frontend/node_modules/
+frontend/dist/
+
+# Editor
+.vscode/
